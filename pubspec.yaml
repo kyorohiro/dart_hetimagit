@@ -1,0 +1,22 @@
+name: hetimagit
+version: 0.0.1
+description: A starting point for Dart libraries or applications.
+environment:
+  sdk: '>=1.0.0 <2.0.0'
+dependencies:
+  ace: any
+  archive: any
+  args: any
+  chrome: any
+  crypto: any
+  diff: any
+  intl: any
+  logging: any
+  unittest: any
+  utf: any
+dev_dependencies:
+  test: '>=0.12.0 <0.13.0'
+transformers:
+- chrome
+- $dart2js:
+    csp: true
