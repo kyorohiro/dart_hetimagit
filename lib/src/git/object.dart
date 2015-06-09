@@ -122,6 +122,7 @@ class TreeObject extends GitObject {
       bool isBlob = buffer[entryStart] == 49; // '1' character
       if (buffer[entryStart + 1] == 54) {  // '6' character
         // Contains a submodule commit object, not supported yet.
+        //
         throw new GitException(
             GitErrorConstants.GIT_SUBMODULES_NOT_YET_SUPPORTED);
       }
